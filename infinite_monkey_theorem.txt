@@ -1,0 +1,15 @@
+You may have heard of the infinite monkey theorem?
+The theorem states that a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time
+will almost surely type a given text, such as the complete works of William Shakespeare.
+Well, suppose we replace a monkey with a Python function.
+
+Goal : Write a python program that simulates the infinite monkey theorem.
+
+Program: The program given a sentence will continously choose random strings infinitely untill it produces
+         the same exact sentence.
+
+Approach : Create three functions.
+    Function1: generate_one - Generates one sentence with a specific character long.
+    Function2: score - Scores a generated string by comparing with a goal string.
+    Function3: best_score - returns only the best generated string after  infinite number of tries with it's score.
+                            also returns the number of trials
